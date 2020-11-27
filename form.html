@@ -3,44 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Реєстрація</title>
+    <title>Вхід</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <a href="index.html">Головна</a>
-    <hr>
-    <br>
-    <h1>Форма реєстрації</h1>
-    <form method="POST" action="https://formspree.io/f/xwkwqold">
-        <label for="nameId">Ім'я:
-            <input type="text" name="name" id="nameId" placeholder="Ім'я:" required>
-        </label>
-         <br>  
-        <label for="EmailId">Пошта:
-            <input type="text" name="Email" id="EmailId" placeholder="Email:" required>
-        </label>
-        <br>
-        <label for="password">Пароль:
-            <input type="password" name="password" id="password" placeholder="Пароль" required>
-        </label>
-        <div>
-        <input type="radio" id="contactChoice1"
-            name="contact" value="email">
-            <label for="contactChoice1">Email</label>
-
-        <input type="radio" id="contactChoice2"
-            name="contact" value="phone">
-            <label for="contactChoice2">Phone number</label>
-
-            <input type="radio" id="contactChoice3"
-            name="contact" value="mail">
-            <label for="contactChoice3">Mail</label>
-        </div>
-                <input type="checkbox" name="option2" value="a2">Windows 2000<Br>
-        <input type="checkbox" name="option3" value="a3">System X<Br> 
-        <input type="checkbox" name="option4" value="a4">Linux<Br> 
-        <input type="checkbox" name="option5" value="a5">X3-DOS</p>
-        <br>
-        <button type="reset">Скинути</button> <button type="submit">Підтверити</button>
+    <form class="log-in-form" method="POST" action="https://formspree.io/f/xwkwqold">
+        <h2 class="title">Увійти</h2>
+            <div class="row">
+                <input class="input" type="text" name="username" placeholder="Username">
+            </div>
+            <div class="row">
+                <input class="input" type="password" name="password" placeholder="Password">
+            </div>
+            <div class="row">
+                <button class="btn" type="submit">Увійти</button>
+            </div>
+            <div class="text-align">
+                <span>Ще немає аккаунту?</span><br>
+                <a href="">Створити новий аккаунт</a>
+            </div>
     </form>
 </body>
 </html>
